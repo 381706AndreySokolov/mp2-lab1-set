@@ -17,6 +17,8 @@ TSet::TSet(int mp) : BitField(mp)
 // конструктор копирования
 TSet::TSet(const TSet &s) : BitField(s.BitField), MaxPower(s.MaxPower)
 {
+	MaxPower = s.MaxPower;
+	BitField = s.BitField;
 }
 
 // конструктор преобразования типа
